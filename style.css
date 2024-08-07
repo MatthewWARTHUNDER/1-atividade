@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; 
+}
+
+.menu{
+    color: white;
+    background-color: #1A2130;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    gap: 2px;
+    height: 10%;
+    z-index: 10;
+}
+
+#section01{
+    background-color: white;
+    height: auto;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40vh;
+    flex-wrap: wrap;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Section-Left-Div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 400px;
+    height: 300px;
+
+    
+}
+
+.box-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+
+}
+
+.box1, .box2, .box3 {
+    background: #fff; 
+    border: 2px solid #06BA63; 
+    border-radius: 8px; 
+    padding: 50px; 
+    max-width: 300px; 
+    text-align: left; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.box1:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
+}
+
+.box2:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
+}
+
+.box3:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
+}
+
+#section02
+{
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    background-color: white;
+}
+
+
+
+
