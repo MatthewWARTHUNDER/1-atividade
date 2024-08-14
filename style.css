@@ -9,19 +9,35 @@ body{
     padding-top: 60px; 
 }
 
-.menu{
-    color: white;
-    background-color: #1A2130;
-    position: fixed;
-    top: 0%;
+.menu {
     width: 100%;
-    gap: 2px;
-    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
 }
 
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #06BA63; 
+}
+
+.navbar-toggler {
+    border: none; 
+}
+
+
+
+
 #section01{
-    background-color: white;
+    background-color: #F7F7F7;
     height: auto;
     padding-top: 150px;
     display: flex;
@@ -101,13 +117,105 @@ ul
 
 #section02
 {
+    
     width: 100%;
     height: auto;
     padding-bottom: 80px;
     padding-top: 80px;
-    background-color: white;
+    background-color: #F7F7F7;
+}
+
+.Recycling-lixos{
+    color: #F7F7F7;
+    background-color: #06BA63;
+    border: none;
+    border-radius: 5px;
+    width: 200px; /* Ajuste o botão para preencher a largura da caixa */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o texto no botão */
+    text-align: center;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    cursor: pointer;
+
 }
 
 
 
+.Recycling-lixos button:hover {
+    background-color: #06BA63;
+    color: #fff;
+}
 
+#section03 {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    
+}
+
+.text-left {
+    text-align: left;
+    border-radius: 8px;
+
+}
+
+.recycling-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre as caixas */
+    justify-content: center;
+}
+
+.recycling-box{
+    background: #fff; 
+    border: 2px solid #06BA63; 
+    border-radius: 8px; 
+    padding: 50px; 
+    max-width: 300px; 
+    text-align: left; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.recycling-box:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
+}
+
+.container{
+    border: 2px solid #06BA63; 
+    height: 400px;
+
+}
+
+.container:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
+}
+
+.image-content {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.image-content img {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    /* Aplica o fade no lado direito da imagem */
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Compatibilidade com navegadores WebKit */
+    margin-left: 10px;
+
+}
