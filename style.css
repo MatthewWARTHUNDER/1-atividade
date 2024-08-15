@@ -18,19 +18,43 @@ body{
 }
 
 .navbar {
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem; /* Aumenta o padding para tornar a navbar mais espaçosa */
+    height: 70px; /* Define uma altura mínima para a navbar */
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-brand {
+    font-size: 1.75rem; /* Aumenta o tamanho da fonte do logo ou nome da empresa */
+}
+
+.navbar-nav .nav-link {
     color: white;
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte dos links de navegação */
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #06BA63; 
+.navbar-nav .nav-link:hover {
+    color: #06BA63;
 }
 
 .navbar-toggler {
-    border: none; 
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem; /* Ajusta o padding para telas menores */
+    }
+
+    .navbar-toggler {
+        padding: 0.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
 }
 
 
@@ -276,7 +300,7 @@ ul
 .container-connect{
     border-radius: 8px;
     width: 40px;
-    gap: 20px;
+    gap: 400px;
     height: 200px;
     background-color: #F7F7F7;
     display: flex;
@@ -286,7 +310,7 @@ ul
 }
 
 .column{
-    gap: 40px;
+    
 }
 
 .column-p{
@@ -300,7 +324,6 @@ ul
 }
 
 .textos{
-    background-color: #06BA63;
     color: #F7F7F7;
     display: flex;
     text-align: center;
@@ -310,12 +333,12 @@ ul
 
 }
 
-.título{
-    margin-left: ;
+.titulo-politicas{
+    color: #F7F7F7;
+    margin-bottom: 250px;
 }
 
-
-
-
-@media (min-width: 768px) {
+.column-p-2{
+    color: #F7F7F7;
+    margin-top: -230px;
 }
